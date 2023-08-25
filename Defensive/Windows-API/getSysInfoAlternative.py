@@ -43,7 +43,7 @@ def get_hardware_info():
 software_info = get_software_info()
 hardware_info = get_hardware_info()
 
-# Write to log files
+Write to log files
 with open("software_info_2.log", "w") as file:
     for software in software_info:
         file.write(f"Name: {software['Name']}, Version: {software['Version']}\n")
