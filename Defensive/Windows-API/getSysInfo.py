@@ -12,7 +12,7 @@ def get_system_info():
     # Getting Software Information
     strComputer = "."
     objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
-    objSWbemServices = objWMIService.ConnectServer(strComputer, "root\cimv2")
+    objSWbemServices = objWMIService.ConnectServer(strComputer, "root\\cimv2")
     colItems = objSWbemServices.ExecQuery("Select * from Win32_Product")
 
     for objItem in colItems:

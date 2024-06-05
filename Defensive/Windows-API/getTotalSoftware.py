@@ -6,7 +6,7 @@ def get_software_info():
     software_info = []
 
     obj_wmi = win32com.client.Dispatch("WbemScripting.SWbemLocator")
-    obj_sw = obj_wmi.ConnectServer(".", "root\cimv2")
+    obj_sw = obj_wmi.ConnectServer(".", "root\\cimv2")
     col_products = obj_sw.ExecQuery("SELECT * FROM Win32_Product")
 
     for obj_product in col_products:
