@@ -175,3 +175,5 @@ cython_debug/
 #.idea/
 Defensive/Windows-API/login_attempts.json
 Defensive/Windows-API/software_info.json
+
+donotupload/
